@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "68de7cfb9f47d052a93417b51f5a5727"
+build_time: [1597058770, 731798000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/swift-log/Sources/Logging/Locks.swift": [1597058764, 97071382]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/swift-log/Sources/Logging/LogHandler.swift": [1597058764, 97363154]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/swift-log/Sources/Logging/Logging.swift": [1597058764, 97802623]

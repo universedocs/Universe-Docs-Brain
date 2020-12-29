@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/LoggerAPI.build/master.swiftdeps"
+  },
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/LoggerAPI/Sources/LoggerAPI/Logger.swift": {
+    "dependencies": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/LoggerAPI.build/Logger.d",
+    "object": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/LoggerAPI.build/Logger.swift.o",
+    "swiftmodule": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/LoggerAPI.build/Logger~partial.swiftmodule",
+    "swift-dependencies": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/LoggerAPI.build/Logger.swiftdeps"
+  }
+}

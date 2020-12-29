@@ -1,0 +1,4 @@
+module CHTTPParser {
+    umbrella header "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/Kitura-net/Sources/CHTTPParser/include/CHTTPParser.h"
+    export *
+}

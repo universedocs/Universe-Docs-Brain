@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "b5903e84b649195853d42d382091860a"
+build_time: [1597058771, 187878000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/Kitura-TemplateEngine/Sources/KituraTemplateEngine/TemplateEngine.swift": [1597058763, 72372250]

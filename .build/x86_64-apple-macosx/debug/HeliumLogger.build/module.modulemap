@@ -1,0 +1,4 @@
+module HeliumLogger {
+    header "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/HeliumLogger.build/HeliumLogger-Swift.h"
+    requires objc
+}

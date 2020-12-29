@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/Universe_Docs_Brain.build/master.swiftdeps"
+  },
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/Sources/Universe Docs Brain/main.swift": {
+    "dependencies": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/Universe_Docs_Brain.build/main.d",
+    "object": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/Universe_Docs_Brain.build/main.swift.o",
+    "swiftmodule": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/Universe_Docs_Brain.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/Universe_Docs_Brain.build/main.swiftdeps"
+  }
+}

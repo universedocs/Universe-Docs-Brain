@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "ba3ef21e0c42c31cd235cfef859ae4db"
+build_time: [1597058783, 318575000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/BlueSSLService/Sources/SSLService/SSLPointerTricks.swift": [1597058764, 821946449]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/BlueSSLService/Sources/SSLService/SSLService.swift": [1597058764, 822571584]

@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "91f02e4683d665a6424b57ad3bea60f9"
+build_time: [1597058780, 965220000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/BodyDecoder.swift": [1597058762, 720161126]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/BodyEncoder.swift": [1597058762, 720373786]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/BodyFormat.swift": [1597058762, 720593607]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/ClosureAliases.swift": [1597058762, 720867531]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/Coder.swift": [1597058762, 721179062]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/Extensions.swift": [1597058762, 721480027]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/QueryDecoder.swift": [1597058762, 721952803]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/CodableQuery/QueryEncoder.swift": [1597058762, 722278692]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/KituraContracts/Sources/KituraContracts/Contracts.swift": [1597058762, 722867878]

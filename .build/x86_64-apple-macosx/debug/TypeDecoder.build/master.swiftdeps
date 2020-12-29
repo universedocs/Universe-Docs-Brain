@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "ef260273584953e94ea45a33c1e7a1fc"
+build_time: [1597058769, 373073000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/TypeDecoder/Sources/TypeDecoder/OrderedDictionary.swift": [1597058764, 417481579]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/TypeDecoder/Sources/TypeDecoder/TypeDecoder.swift": [1597058764, 418070200]

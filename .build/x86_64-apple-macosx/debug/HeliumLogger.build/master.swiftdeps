@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "7188259fbd06da3e245487e1a4a7bf91"
+build_time: [1597058780, 964222000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/HeliumLogger/Sources/HeliumLogger/HeliumLogHandler.swift": [1597058763, 285117945]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/HeliumLogger/Sources/HeliumLogger/HeliumLogger.swift": [1597058763, 285331911]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/HeliumLogger/Sources/HeliumLogger/HeliumStreamLogger.swift": [1597058763, 285556223]

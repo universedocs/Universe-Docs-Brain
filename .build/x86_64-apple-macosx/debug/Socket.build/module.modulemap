@@ -1,0 +1,4 @@
+module Socket {
+    header "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/Socket.build/Socket-Swift.h"
+    requires objc
+}

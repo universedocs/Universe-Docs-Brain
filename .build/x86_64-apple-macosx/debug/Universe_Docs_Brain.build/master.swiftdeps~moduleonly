@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "f361abe5390847052cfc818bfd19da3e"
+build_time: [1597058795, 43330000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/Sources/Universe Docs Brain/main.swift": [1597058611, 213995271]

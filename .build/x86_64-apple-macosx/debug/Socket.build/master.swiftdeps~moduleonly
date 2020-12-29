@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "ec299a65c8204dcb436b14090bd52f17"
+build_time: [1597058769, 372599000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/BlueSocket/Sources/Socket/Socket.swift": [1597058763, 896578051]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/BlueSocket/Sources/Socket/SocketProtocols.swift": [1597058763, 896777226]
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/BlueSocket/Sources/Socket/SocketUtils.swift": [1597058763, 896931097]

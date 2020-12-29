@@ -1,0 +1,4 @@
+module TypeDecoder {
+    header "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/TypeDecoder.build/TypeDecoder-Swift.h"
+    requires objc
+}

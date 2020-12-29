@@ -1,0 +1,35 @@
+{
+  "allExecutables" : [
+    "Universe Docs Brain"
+  ],
+  "builtTestProducts" : [
+    {
+      "packageName" : "Universe Docs Brain",
+      "productName" : "Universe Docs BrainPackageTests",
+      "testBinary" : "\/Users\/kumarmuthaiah\/Documents\/Kumar\/Projects\/Universe Docs Brain\/.build\/x86_64-apple-macosx\/debug\/Universe Docs BrainPackageTests.xctest\/Contents\/MacOS\/Universe Docs BrainPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "rootExecutables" : [
+    "Universe Docs Brain"
+  ],
+  "swiftTargetMap" : {
+    "C.HeliumLogger-debug.module" : "HeliumLogger",
+    "C.Kitura-debug.module" : "Kitura",
+    "C.KituraContracts-debug.module" : "KituraContracts",
+    "C.KituraNet-debug.module" : "KituraNet",
+    "C.KituraTemplateEngine-debug.module" : "KituraTemplateEngine",
+    "C.LoggerAPI-debug.module" : "LoggerAPI",
+    "C.Logging-debug.module" : "Logging",
+    "C.Socket-debug.module" : "Socket",
+    "C.SSLService-debug.module" : "SSLService",
+    "C.TypeDecoder-debug.module" : "TypeDecoder",
+    "C.Universe Docs Brain-debug.module" : "Universe Docs Brain",
+    "C.Universe Docs BrainTests-debug.module" : "Universe Docs BrainTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

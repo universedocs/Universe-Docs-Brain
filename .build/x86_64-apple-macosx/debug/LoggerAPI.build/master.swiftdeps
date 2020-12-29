@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "e8bcd18261030e7af4a42af488dfd277"
+build_time: [1597058778, 124605000]
+inputs:
+  "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/checkouts/LoggerAPI/Sources/LoggerAPI/Logger.swift": [1597058765, 89537159]

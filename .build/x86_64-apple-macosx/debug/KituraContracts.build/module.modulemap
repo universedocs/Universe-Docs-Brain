@@ -1,0 +1,4 @@
+module KituraContracts {
+    header "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/KituraContracts.build/KituraContracts-Swift.h"
+    requires objc
+}

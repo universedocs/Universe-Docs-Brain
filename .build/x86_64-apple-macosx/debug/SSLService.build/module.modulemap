@@ -1,0 +1,4 @@
+module SSLService {
+    header "/Users/kumarmuthaiah/Documents/Kumar/Projects/Universe Docs Brain/.build/x86_64-apple-macosx/debug/SSLService.build/SSLService-Swift.h"
+    requires objc
+}
