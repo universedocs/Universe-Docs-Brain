@@ -31,7 +31,9 @@ public class UDCTest {
 //        updateDocumentItemReference(id: idTa, collectionName: "UDCDocumentItemConfiguration", udcDocumentTypeIdName: "UDCDocumentType.DocumentItemConfiguration")
 //        updateDocumentItemConfigurationDocuments(language: "ta")
 //        updateDocumentItemConfigurationDocuments(language: "ta")
-        listDocumentRootDocuments(udcDocumentTypeIdName: "UDCDocumentType.FoodRecipe", documentLanguage: "en")
+        addEdge(collectionName: "UDCDocumentItem")
+//        createGraphEdgeLabel()
+//        listDocumentRootDocuments(udcDocumentTypeIdName: "UDCDocumentType.FoodRecipe", documentLanguage: "en")
     }
     
     public func listDocumentRootDocuments(udcDocumentTypeIdName: String, documentLanguage: String) {
@@ -548,6 +550,55 @@ public class UDCTest {
         }
     }
     
+    private func createGraphEdgeLabel() {
+            var databaseOrm: DatabaseOrm = MongoDatabaseOrm()
+            var udbcDatabaseOrm: UDBCDatabaseOrm = UDBCMongoDatabaseOrm()
+            do {
+                
+                let databaesOrmResult = databaseOrm.connect(userName: DatabaseOrmConnection.username, password: DatabaseOrmConnection.password, host: DatabaseOrmConnection.host, port: DatabaseOrmConnection.port, databaseName: DatabaseOrmConnection.database)
+                udbcDatabaseOrm.ormObject = databaseOrm as AnyObject
+                udbcDatabaseOrm.type = UDBCDatabaseType.MongoDatabase.rawValue
+                
+                var labelArray = [UDCGraphEdgeLabel]()
+                var label = UDCGraphEdgeLabel()
+                label._id = try udbcDatabaseOrm.generateId()
+                label.idName = "UDCGraphEdgeLabel.Parent"
+                label.language = "en"
+                label.name = "parent"
+                labelArray.append(label)
+                label = UDCGraphEdgeLabel()
+                label._id = try udbcDatabaseOrm.generateId()
+                label.idName = "UDCGraphEdgeLabel.Children"
+                label.language = "en"
+                label.name = "children"
+                labelArray.append(label)
+                label = UDCGraphEdgeLabel()
+                label._id = try udbcDatabaseOrm.generateId()
+                label.idName = "UDCGraphEdgeLabel.Children"
+                label.language = "ta"
+                label.name = "children"
+                labelArray.append(label)
+                label = UDCGraphEdgeLabel()
+                label._id = try udbcDatabaseOrm.generateId()
+                label.idName = "UDCGraphEdgeLabel.Children"
+                label.language = "ta"
+                label.name = "children"
+                labelArray.append(label)
+
+                for lab in labelArray {
+                let data = UDCGraphEdgeLabel.save(udbcDatabaseOrm: udbcDatabaseOrm, object: lab)
+                    if data.databaseOrmError.count > 0 {
+                        print(data.databaseOrmError[0].description)
+                    }
+                }
+            } catch {
+                    print(error)
+            }
+        defer {
+                   databaseOrm.disconnect()
+               }
+    }
+    
     private func addEdge(collectionName: String) {
         var databaseOrm: DatabaseOrm = MongoDatabaseOrm()
         var udbcDatabaseOrm: UDBCDatabaseOrm = UDBCMongoDatabaseOrm()
@@ -567,12 +618,12 @@ public class UDCTest {
             for (modelIndex, model) in udcdm.enumerated() {
                 print(model.name)
                 //                if model.idName.hasSuffix("UDCDocumentItem.BasicDetail") {
-                if model.childrenMap != nil {
-                    model.childrenMap!.removeAll()
-                }
-                if model.parentMap != nil {
-                    model.parentMap!.removeAll()
-                }
+//                if model.childrenMap != nil {
+//                    model.childrenMap!.removeAll()
+//                }
+//                if model.parentMap != nil {
+//                    model.parentMap!.removeAll()
+//                }
                 if model.edge != nil {
                     if model.edge!.count > 0 {
                         model.edge!.removeAll()

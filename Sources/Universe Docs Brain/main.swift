@@ -55,24 +55,24 @@ arguments.append("Controller")
 
 //#endif
  
-if arguments[1] == "Controller" {
-
-
-
-    let router = Router()
-
-    HeliumLogger.use()
-
-    initializeBrainControllerApplicationRoutes(router: router)
-
-    Kitura.addHTTPServer(onPort: 83, with: router) // withSSL: ssl)
-    Kitura.run()
-} else if arguments[1] == "Scheduler" {
-    let brainShcedulerApplication = BrainShcedulerApplication()
-    brainShcedulerApplication.start()
-} else {
-    print("Invalid argument: UniverseDocsBrain Controller or Scheduler")
-}
+//if arguments[1] == "Controller" {
+//
+//
+//
+//    let router = Router()
+//
+//    HeliumLogger.use()
+//
+//    initializeBrainControllerApplicationRoutes(router: router)
+//
+//    Kitura.addHTTPServer(onPort: 83, with: router) // withSSL: ssl)
+//    Kitura.run()
+//} else if arguments[1] == "Scheduler" {
+//    let brainShcedulerApplication = BrainShcedulerApplication()
+//    brainShcedulerApplication.start()
+//} else {
+//    print("Invalid argument: UniverseDocsBrain Controller or Scheduler")
+//}
 
 
 
@@ -94,7 +94,7 @@ if arguments[1] == "Controller" {
 //let pdfFileUtility = PDFFileUtility()
 //pdfFileUtility.makePDF()
 
-//UDCTest().start()
+UDCTest().start()
 //
 //print(SwiftGoogleTranslate.shared.detect(text: "¡Hola!"))
 //

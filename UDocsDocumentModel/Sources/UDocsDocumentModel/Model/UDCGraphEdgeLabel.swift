@@ -41,5 +41,11 @@ public class UDCGraphEdgeLabel : Codable {
         
         return ""
     }
-    
+    static public func save<T: Codable>(udbcDatabaseOrm: UDBCDatabaseOrm, object: T) -> DatabaseOrmResult<T> {
+           
+           let DatabaseOrm = udbcDatabaseOrm.ormObject as! DatabaseOrm
+           return DatabaseOrm.save(collectionName: "UDCGraphEdgeLabel", object: object )
+           
+       }
+       
 }

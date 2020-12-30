@@ -28,19 +28,19 @@ public class UDCDocumentGraphModel : Codable {
     public var documentMapObjectName: String = ""
     public var udcSentencePattern = UDCSentencePattern()
     public var isChildrenAllowed: Bool = false
-//    public var childrenId = [String]()
+    public var childrenId = [String]()
 //    public var parentMap = [String: [String]]()
 //    public var childrenMap = [String: [String]]()
     public var edge = [String: [String]]()
-//    public var parentId = [String]()
+    public var parentId = [String]()
     public var level: Int = 0
     public var language: String = ""
     public var udcAnalytic = [UDCAnalytic]()
     public var udcProfile = [UDCProfile]()
-//    public var pathIdName = [[String]]()
+    public var pathIdName = [[String]]()
     public var udcDocumentTime = UDCDocumentTime()
-//    public var udcViewItemCollection = UDCViewItemCollection()
-//    public var uvcViewItemCollection = UVCViewItemCollection()
+    public var udcViewItemCollection = UDCViewItemCollection()
+    public var uvcViewItemCollection = UVCViewItemCollection()
     public var udcDocumentGraphModelReferenceId: String = ""
     private static var predefinedUdcGraphEdgeLabel = [UDCGraphEdgeLabel]()
 
