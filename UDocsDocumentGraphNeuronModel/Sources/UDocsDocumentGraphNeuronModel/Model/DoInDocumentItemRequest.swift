@@ -23,7 +23,7 @@ public class DoInDocumentItemRequest : Codable {
     public var findIdName: String = ""
     public var documentIdName: String = ""
     public var parentId: String = ""
-    public var udcSentencePatternDataGroupValue = [UDCSentencePatternDataGroupValue]()
+    public var rootLanguageId: String = ""
     public var udcDocumentTypeIdName: String = ""
     public var udcProfile = [UDCProfile]()
     public var sentenceIndex: Int = 0

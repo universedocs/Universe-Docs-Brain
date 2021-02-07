@@ -3,26 +3,75 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "DocumentUtility.getDocumentModel(udcDocumentGraphModelId:udcDocumentTypeIdName:isLanguageChild:neuronRequest:neuronResponse:):DocumentUtility.swift">
+         contextName = "UDCTest.updateDocumentItemReference(id:):UDCTest.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DocumentItemNeuron.findAndProcessDocumentItem(mode:udcSentencePatternDataGroupValue:findPathIdName:findIdName:inChildrens:parentFound:foundParentModel:foundParentId:nodeIndex:itemIndex:level:udcDocumentTypeIdName:udcProfile:isParent:generatedIdName:neuronRequest:neuronResponse:documentLanguage:addUdcSentencePatternDataGroupValue:addUdcViewItemCollection:addUdcSentencePatternDataGroupValueIndex:pathIdName:):DocumentItemNeuron.swift">
          <PersistentStrings>
             <PersistentString
-               value = "neuronUtility!.getCollectionName(udcDocumentTypeIdName: udcDocumentTypeIdName)!">
+               value = "pathIdName">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DictionaryUtility.getEntries(word:language:):DictionaryUtility.swift">
-      </ContextState>
-      <ContextState
-         contextName = "DocumentGraphUtility.getCurrentTime(language:udcProfile:neuronRequest:neuronResponse:):DocumentGraphUtility.swift">
+         contextName = "UDCTest.updateDocumentItemDetails(id:):UDCTest.swift">
          <PersistentStrings>
             <PersistentString
-               value = "&quot;UDCDocumentItem.\(String(weekDay).capitalized)&quot;">
+               value = "model.idName.replacingOccurrences(of: &quot;UDCDocumentItem&quot;, with: &quot;UDCDocument&quot;)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "UDCDocumentGraphModel.copyToChildMap(name:):UDCDocumentGraphModel.swift">
+         contextName = "UDCTest.updateLanguageModels(documentType:collectionName:rootLanguage:otherLangArray:):UDCTest.swift">
+      </ContextState>
+      <ContextState
+         contextName = "static UDCDocumentGraphModel.getGraphEdgeLabelId(_:_:):UDCDocumentGraphModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "predefinedUdcGraphEdgeLabel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentMapNeuron.getDocumentMap(neuronRequest:):DocumentMapNeuron.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "udcDocumentItemForMap!.getChildrenEdgeId(interfaceLanguage)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TranslateLanguageUtility.makeRequest(usingTranslationAPI:urlParams:completion:):TranslateLanguageUtility.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "api.getHTTPMethod()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentGraphNeuron.getDocumentModels(getDocumentModelsRequest:getDocumentModelsResponse:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DocumentItemNeuron.getDocumentViewModel(childrenId:uvcDocumentGraphModelArray:generateDocumentGraphViewRequest:nodeIndex:neuronRequest:neuronResponse:documentLanguage:):DocumentItemNeuron.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "neuronUtility!.getCollectionName(udcDocumentTypeIdName: generateDocumentGraphViewRequest.getDocumentGraphViewRequest.udcDocumentTypeIdName)!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UDCTest.getDocumentItemId(collectionName:childrenId:parentPathIdName:findIdName:udbcDatabaseOrm:udcProfile:udcDocumentTypeIdName:language:pathIdName:parentFound:):UDCTest.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UDCTest.updateDocumentItemReference(id:collectionName:udcDocumentTypeIdName:):UDCTest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "model.idName.replacingOccurrences(of: &quot;UDCDocumentItem&quot;, with: &quot;UDCDocument&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UDCDocumentGraphModel.appendChildrenId(_:_:):UDCDocumentGraphModel.swift">
          <PersistentStrings>
             <PersistentString
                value = "childrenMap">
@@ -38,88 +87,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DocumentGraphUtility.getDocumentModel(udcDocumentId:idName:udcDocumentTypeIdName:udcProfile:documentLanguage:isLanguageChild:neuronRequest:neuronResponse:):DocumentGraphUtility.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "udcProfile">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "DictionaryUtility.getEntries(word:language:):DictionaryUtility.swift">
       </ContextState>
       <ContextState
-         contextName = "UDCTest.updateDocumentItemReference(id:):UDCTest.swift">
-      </ContextState>
-      <ContextState
-         contextName = "DocumentItemNeuron.getDocumentViewModel(childrenId:uvcDocumentGraphModelArray:generateDocumentGraphViewRequest:nodeIndex:neuronRequest:neuronResponse:documentLanguage:):DocumentItemNeuron.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "neuronUtility!.getCollectionName(udcDocumentTypeIdName: generateDocumentGraphViewRequest.getDocumentGraphViewRequest.udcDocumentTypeIdName)!">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DocumentGraphNeuron.generateSentenceViewAsArray(udcDocumentGraphModel:uvcViewItemCollection:neuronRequest:neuronResponse:newView:isEditable:level:nodeIndex:itemIndex:documentLanguage:):DocumentGraphNeuron.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "UVCColor.get(level: level)!.name">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DocumentItemNeuron.getDocumentItemOptions(collectionName:text:documentItemId:uvcOptionViewModel:udcDocumentTypeIdName:objectName:optionItemId:path:pathIdName:category:subCategory:neuronRequest:neuronResponse:documentLanguage:documentId:searchPhase:):DocumentItemNeuron.swift">
-      </ContextState>
-      <ContextState
-         contextName = "UDCTest.updateDocumentItemReference(id:collectionName:udcDocumentTypeIdName:):UDCTest.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "model.idName.replacingOccurrences(of: &quot;UDCDocumentItem&quot;, with: &quot;UDCDocument&quot;)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DocumentMapNeuron.getDocumentMap(neuronRequest:):DocumentMapNeuron.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "udcDocumentItemForMap!.getChildrenEdgeId(interfaceLanguage)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "UDCTest.updateDocumentItemDetails(id:):UDCTest.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "model.idName.replacingOccurrences(of: &quot;UDCDocumentItem&quot;, with: &quot;UDCDocument&quot;)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DocumentItemNeuron.generateSentenceViewAsArray(udcDocumentGraphModel:uvcViewItemCollection:neuronRequest:neuronResponse:newView:isEditable:level:viewPathIdName:documentLanguage:documentModelId:udcProfile:udcDocumentTypeIdName:):DocumentItemNeuron.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "udcDocumentGraphModelItemConfiguration.childrenId(documentLanguage)">
-            </PersistentString>
-            <PersistentString
-               value = "udcDocumentGraphModelItemConfiguration.getChildrenEdgeId(documentLanguage)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "static UDCDocumentGraphModel1.getGraphEdgeLabelId(_:_:):UDCDocumentGraphModel1.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "predefinedUdcGraphEdgeLabel">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MongoDatabaseOrm.getAll&lt;A&gt;(collectionName:):MongoDatabaseOrm.swift">
-      </ContextState>
-      <ContextState
-         contextName = "DocumentGraphNeuron.generateDocument(name:udcSentencePatternDataGroupValue:udcDocumentTypeIdName:documentLanguage:udcProfile:documentItem:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "&quot;UDCDocument.\(companyName)\(applicationName)User&quot;">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "UDCTest.getDocumentItemId(collectionName:idName:parentPathIdName:findIdName:udbcDatabaseOrm:udcProfile:udcDocumentTypeIdName:language:pathIdName:parentFound:):UDCTest.swift">
       </ContextState>
       <ContextState
          contextName = "DocumentGraphNeuron.duplicateDocumentGraphModel(parentId:childrenId:newChildrenId:levelChildrenId:udcDocumentTypeIdName:neuronRequest:neuronResponse:profileId:udcProfile:documentLanguage:duplicateToDocumentLanguage:udcDocumentId:):DocumentGraphNeuron.swift">
@@ -130,9 +101,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DocumentGraphNeuron.getDocumentModels(getDocumentModelsRequest:getDocumentModelsResponse:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
-      </ContextState>
-      <ContextState
          contextName = "UDCDocumentGraphModel.getChildrenEdgeId(_:):UDCDocumentGraphModel.swift">
          <PersistentStrings>
             <PersistentString
@@ -141,18 +109,29 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "static UDCDocumentGraphModel.getGraphEdgeLabelId(_:_:):UDCDocumentGraphModel.swift">
+         contextName = "DocumentItemNeuron.searchDocumentItem(childrenId:uvcOptionViewModel:documentGraphItemSearchRequest:neuronRequest:neuronResponse:):DocumentItemNeuron.swift">
          <PersistentStrings>
             <PersistentString
-               value = "predefinedUdcGraphEdgeLabel">
+               value = "documentGraphItemSearchRequest.udcDocumentTypeIdName.replacingOccurrences(of: &quot;UDCDocumentType.&quot;, with: &quot;&quot;)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "UDCDocumentGraphModel.appendChildrenId(_:_:):UDCDocumentGraphModel.swift">
+         contextName = "DocumentGraphNeuron.findAndGetName(documentId:pathIdName:findIdName:udcDocumentTypeIdName:udcProfile:documentLanguage:duplicateToDocumentLanguage:translatedName:traslatedDocumentId:translatedNameId:translatedNameIdName:translatedNameCategoryId:translatedNameCategoryIdName:translatedNameSubCategoryId:translatedNameSubCategoryIdName:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UDCDocumentGraphModel.getEdgeId(_:language:):UDCDocumentGraphModel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "childrenMap">
+               value = "edge">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentItemNeuron.searchDocumentItem(neuronRequest:neuronResponse:):DocumentItemNeuron.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "udcDocumentDocumentItemMap!.getChildrenEdgeId(documentLanguage)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -168,10 +147,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DocumentGraphNeuron.findAndGetName(childrenId:pathIdName:findIdName:udcDocumentTypeIdName:udcProfile:documentLanguage:translatedName:translatedNameId:translatedNameIdName:translatedNameCategoryId:translatedNameCategoryIdName:translatedNameSubCategoryId:translatedNameSubCategoryIdName:findPathIdName:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
+         contextName = "DocumentGraphNeuron.generateSentenceViewAsArray(udcDocumentGraphModel:uvcViewItemCollection:neuronRequest:neuronResponse:newView:isEditable:level:nodeIndex:itemIndex:documentLanguage:):DocumentGraphNeuron.swift">
          <PersistentStrings>
             <PersistentString
-               value = "findPathIdName">
+               value = "UVCColor.get(level: level)!.name">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -184,23 +163,20 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DocumentItemNeuron.searchDocumentItem(childrenId:uvcOptionViewModel:documentGraphItemSearchRequest:neuronRequest:neuronResponse:):DocumentItemNeuron.swift">
+         contextName = "static UDCDocumentGraphModel1.getGraphEdgeLabelId(_:_:):UDCDocumentGraphModel1.swift">
          <PersistentStrings>
             <PersistentString
-               value = "documentGraphItemSearchRequest.udcDocumentTypeIdName.replacingOccurrences(of: &quot;UDCDocumentType.&quot;, with: &quot;&quot;)">
+               value = "predefinedUdcGraphEdgeLabel">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TranslateLanguageUtility.makeRequest(usingTranslationAPI:urlParams:completion:):TranslateLanguageUtility.swift">
+         contextName = "DocumentGraphUtility.getDocumentModel(udcDocumentId:idName:udcDocumentTypeIdName:udcProfile:documentLanguage:isLanguageChild:neuronRequest:neuronResponse:):DocumentGraphUtility.swift">
          <PersistentStrings>
             <PersistentString
-               value = "api.getHTTPMethod()">
+               value = "udcProfile">
             </PersistentString>
          </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DocumentGraphNeuron.duplicateDocumentGraphModel(parentId:childrenId:newChildrenId:levelChildrenId:udcDocumentTypeIdName:neuronRequest:neuronResponse:profileId:udcProfile:documentLanguage:duplicateToDocumentLanguage:udcDocumentId:pathIdName:):DocumentGraphNeuron.swift">
       </ContextState>
       <ContextState
          contextName = "DocumentItemConfigurationUtility.getDocumentItemConfiguration(name:udcDocumentItem:udcDocumentId:neuronResponse:language:udcProfile:):DocumentItemConfigurationUItility.swift">
@@ -211,15 +187,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DocumentItemNeuron.searchDocumentItem(neuronRequest:neuronResponse:):DocumentItemNeuron.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "udcDocumentDocumentItemMap!.getChildrenEdgeId(documentLanguage)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DocumentGraphNeuron.findAndGetName(documentId:pathIdName:findIdName:udcDocumentTypeIdName:udcProfile:documentLanguage:duplicateToDocumentLanguage:translatedName:traslatedDocumentId:translatedNameId:translatedNameIdName:translatedNameCategoryId:translatedNameCategoryIdName:translatedNameSubCategoryId:translatedNameSubCategoryIdName:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
+         contextName = "MongoDatabaseOrm.getAll&lt;A&gt;(collectionName:):MongoDatabaseOrm.swift">
       </ContextState>
       <ContextState
          contextName = "static UVCViewGenerator.isDesktop(sourceId:):UVCViewGenerator.swift">
@@ -231,6 +199,74 @@
                value = "deviceUUIDeviceModel">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentUtility.getDocumentModel(udcDocumentGraphModelId:udcDocumentTypeIdName:isLanguageChild:neuronRequest:neuronResponse:):DocumentUtility.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "neuronUtility!.getCollectionName(udcDocumentTypeIdName: udcDocumentTypeIdName)!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UDCTest.updateLanguageModels(childrenId:documentType:collectionName:rootLanguage:language:pathIdNameInit:udbcDatabaseOrm:udcProfile:idName:):UDCTest.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DocumentItemNeuron.generateSentenceViewAsArray(udcDocumentGraphModel:uvcViewItemCollection:neuronRequest:neuronResponse:newView:isEditable:level:viewPathIdName:documentLanguage:documentModelId:udcProfile:udcDocumentTypeIdName:):DocumentItemNeuron.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "udcDocumentGraphModelItemConfiguration.childrenId(documentLanguage)">
+            </PersistentString>
+            <PersistentString
+               value = "udcDocumentGraphModelItemConfiguration.getChildrenEdgeId(documentLanguage)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static UVCColor.get(_:):UVCColor.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UVCColor.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UDCDocumentGraphModel.copyToChildMap(name:):UDCDocumentGraphModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "childrenMap">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentItemNeuron.getDocumentItemOptions(collectionName:text:documentItemId:uvcOptionViewModel:udcDocumentTypeIdName:objectName:optionItemId:path:pathIdName:category:subCategory:neuronRequest:neuronResponse:documentLanguage:documentId:searchPhase:):DocumentItemNeuron.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DocumentGraphUtility.getCurrentTime(language:udcProfile:neuronRequest:neuronResponse:):DocumentGraphUtility.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "&quot;UDCDocumentItem.\(String(weekDay).capitalized)&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentGraphNeuron.generateDocument(name:udcSentencePatternDataGroupValue:udcDocumentTypeIdName:documentLanguage:udcProfile:documentItem:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "&quot;UDCDocument.\(companyName)\(applicationName)User&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentGraphNeuron.findAndGetName(childrenId:pathIdName:findIdName:udcDocumentTypeIdName:udcProfile:documentLanguage:translatedName:translatedNameId:translatedNameIdName:translatedNameCategoryId:translatedNameCategoryIdName:translatedNameSubCategoryId:translatedNameSubCategoryIdName:findPathIdName:neuronRequest:neuronResponse:):DocumentGraphNeuron.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "findPathIdName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DocumentGraphNeuron.duplicateDocumentGraphModel(parentId:childrenId:newChildrenId:levelChildrenId:udcDocumentTypeIdName:neuronRequest:neuronResponse:profileId:udcProfile:documentLanguage:duplicateToDocumentLanguage:udcDocumentId:pathIdName:):DocumentGraphNeuron.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -39,8 +39,8 @@ public class UDCDocumentGraphModel1 : Codable {
     public var udcProfile = [UDCProfile]()
     public var pathIdName = [[String]]()
     public var udcDocumentTime = UDCDocumentTime()
-    public var udcViewItemCollection = UDCViewItemCollection()
-    public var uvcViewItemCollection = UVCViewItemCollection()
+//    public var udcViewItemCollection = UDCViewItemCollection()
+//    public var uvcViewItemCollection = UVCViewItemCollection()
     public var udcDocumentGraphModelReferenceId: String = ""
     private static var predefinedUdcGraphEdgeLabel = [UDCGraphEdgeLabel]()
 
@@ -125,6 +125,12 @@ public class UDCDocumentGraphModel1 : Codable {
     public func removeEdgeId(_ labelId: String,  _ at: Int) {
         edge![labelId]!.remove(at: at)
     }
+    
+    
+    public func getEdgeId(_ labelId: String, language: String) -> [String] {
+        return edge![UDCDocumentGraphModel.getGraphEdgeLabelId(labelId, language)]!
+    }
+   
 
     public func getEdgeId(_ labelId: String, _ at: Int) -> String {
         return edge![labelId]![at]

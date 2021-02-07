@@ -291,7 +291,7 @@ public class DocumentGraphNeuron : Neuron {
         } else if neuronRequest.neuronOperation.name == "DocumentGraphNeuron.Document.Get.InterfacePhoto" {
             try documentGetInterfacePhoto(neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
         } else if neuronRequest.neuronOperation.name == "DocumentGraphNeuron.Document.Get.View" {
-//            let getDocumentGraphViewRequest = neuronUtility!.getNeuronRequest(json: neuronRequest.neuronOperation.neuronData.text, object: GetDocumentGraphViewRequest())
+            let getDocumentGraphViewRequest = neuronUtility!.getNeuronRequest(json: neuronRequest.neuronOperation.neuronData.text, object: GetDocumentGraphViewRequest())
 //            try putReferenceForDocumentTypes(documentType: ["UDCDocumentType.DocumentMap","UDCDocumentType.FoodRecipe", "UDCDocumentType.DocumentItemConfiguration", "UDCDocumentType.Ingredient", "UDCDocumentType.HumanProfile", "UDCDocumentType.EmailProfile", "UDCDocumentType.Cuisine", "UDCDocumentType.Button"], udcProfile: getDocumentGraphViewRequest.udcProfile, language: "en", neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
 ////            let udcDocumentItem = try getDocumentModel(udcDocumentGraphModelIdName: "UDCDocumentItem.DocumentItems", language: "en", udcDocumentTypeIdName: "UDCDocumentType.DocumentItem", isLanguageChild: false, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
 ////
@@ -318,32 +318,32 @@ public class DocumentGraphNeuron : Neuron {
 //            var neuronResponseLocal = NeuronRequest()
 //            try documentDelete(neuronRequest: neuronRequestLocal, neuronResponse: &neuronResponseLocal)
 //
-//                        let neuronRequestLocal = NeuronRequest()
-//                        neuronRequestLocal.neuronSource._id = neuronRequest.neuronSource._id
-//                        neuronRequestLocal.neuronOperation.synchronus = true
-//                        neuronRequestLocal.neuronOperation._id = neuronRequest.neuronOperation._id
-//                        neuronRequestLocal.neuronSource.name = DocumentGraphNeuron.getName()
-//                        neuronRequestLocal.neuronSource.type = DocumentGraphNeuron.getName();
-//                        neuronRequestLocal.neuronOperation.name = "DocumentMapNeuron.DocumentMapNode.Add"
-//                        neuronRequestLocal.neuronOperation.parent = true
-//                        let createDocumentTypeRequest = CreateDocumentTypeRequest()
-//                        createDocumentTypeRequest.isKnowledgeAvailable = false
-//                        var createDocumentTypeData = CreateDocumentTypeData()
-//                        createDocumentTypeData.name = "user"
-//                        createDocumentTypeData.language = "en"
-//                        createDocumentTypeRequest.createDocumentTypeData.append(createDocumentTypeData)
-//                        createDocumentTypeData = CreateDocumentTypeData()
-//                        createDocumentTypeData.name = "பயனர்"
-//                        createDocumentTypeData.language = "ta"
-//                        createDocumentTypeRequest.createDocumentTypeData.append(createDocumentTypeData)
-//                        createDocumentTypeRequest.udcProfile = getDocumentGraphViewRequest.udcProfile
-//                        let jsonUtilityAddDocumentMapNodeRequest = JsonUtility<CreateDocumentTypeRequest>()
-//                        neuronRequestLocal.neuronOperation.neuronData.text = jsonUtilityAddDocumentMapNodeRequest.convertAnyObjectToJson(jsonObject: createDocumentTypeRequest)
-//                        var neuronResponseLocal = NeuronRequest()
-//                        try createDocumentType(neuronRequest: neuronRequestLocal, neuronResponse: &neuronResponseLocal)
-//                        if neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponseLocal) {
-//                            print("Error in create document type: \(neuronResponseLocal.neuronOperation.neuronOperationStatus.neuronOperationError![0].description)")
-//                        }
+                        let neuronRequestLocal = NeuronRequest()
+                        neuronRequestLocal.neuronSource._id = neuronRequest.neuronSource._id
+                        neuronRequestLocal.neuronOperation.synchronus = true
+                        neuronRequestLocal.neuronOperation._id = neuronRequest.neuronOperation._id
+                        neuronRequestLocal.neuronSource.name = DocumentGraphNeuron.getName()
+                        neuronRequestLocal.neuronSource.type = DocumentGraphNeuron.getName();
+                        neuronRequestLocal.neuronOperation.name = "DocumentMapNeuron.DocumentMapNode.Add"
+                        neuronRequestLocal.neuronOperation.parent = true
+                        let createDocumentTypeRequest = CreateDocumentTypeRequest()
+                        createDocumentTypeRequest.isKnowledgeAvailable = false
+                        var createDocumentTypeData = CreateDocumentTypeData()
+                        createDocumentTypeData.name = "divi word press theme"
+                        createDocumentTypeData.language = "en"
+                        createDocumentTypeRequest.createDocumentTypeData.append(createDocumentTypeData)
+                        createDocumentTypeData = CreateDocumentTypeData()
+                        createDocumentTypeData.name = "divi சொல் பத்திரிகை தீம்"
+                        createDocumentTypeData.language = "ta"
+                        createDocumentTypeRequest.createDocumentTypeData.append(createDocumentTypeData)
+                        createDocumentTypeRequest.udcProfile = getDocumentGraphViewRequest.udcProfile
+                        let jsonUtilityAddDocumentMapNodeRequest = JsonUtility<CreateDocumentTypeRequest>()
+                        neuronRequestLocal.neuronOperation.neuronData.text = jsonUtilityAddDocumentMapNodeRequest.convertAnyObjectToJson(jsonObject: createDocumentTypeRequest)
+                        var neuronResponseLocal = NeuronRequest()
+                        try createDocumentType(neuronRequest: neuronRequestLocal, neuronResponse: &neuronResponseLocal)
+                        if neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponseLocal) {
+                            print("Error in create document type: \(neuronResponseLocal.neuronOperation.neuronOperationStatus.neuronOperationError![0].description)")
+                        }
             
             //            var englishIdName: String = ""
             //            var englishName: String = ""
@@ -2936,15 +2936,16 @@ public class DocumentGraphNeuron : Neuron {
 
             if udcDocumentGraphModel == nil {
                 // Get the document
-//                let databaseOrmResultUDCDocument = UDCDocument.get(udbcDatabaseOrm: udbcDatabaseOrm!, id: getDocumentGraphViewRequest.documentId)
-//                if databaseOrmResultUDCDocument.databaseOrmError.count > 0 {
-//                    neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultUDCDocument.databaseOrmError[0].name, description: databaseOrmResultUDCDocument.databaseOrmError[0].description))
-//                    return
-//                }
-//                udcDocument = databaseOrmResultUDCDocument.object[0]
-                let modelIds = try documentUtility.getModelIds(documentId: getDocumentGraphViewRequest.documentId, udcDocumentTypeIdName: getDocumentGraphViewRequest.udcDocumentTypeIdName, documentLanguage: getDocumentGraphViewRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
+                let databaseOrmResultUDCDocument = UDCDocument.get(udbcDatabaseOrm: udbcDatabaseOrm!, id: getDocumentGraphViewRequest.documentId)
+                if databaseOrmResultUDCDocument.databaseOrmError.count > 0 {
+                    neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultUDCDocument.databaseOrmError[0].name, description: databaseOrmResultUDCDocument.databaseOrmError[0].description))
+                    return
+                }
+                udcDocument = databaseOrmResultUDCDocument.object[0]
+//                let modelIds = try documentUtility.getModelIds(documentId: getDocumentGraphViewRequest.documentId, udcDocumentTypeIdName: getDocumentGraphViewRequest.udcDocumentTypeIdName, documentLanguage: getDocumentGraphViewRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
                 // Get the root node
-                let databaseOrmResultudcDocumentGraphModel = UDCDocumentGraphModel.get(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: getDocumentGraphViewRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, id: modelIds[0])
+//                let databaseOrmResultudcDocumentGraphModel = UDCDocumentGraphModel.get(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: getDocumentGraphViewRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, id: modelIds[0])
+                let databaseOrmResultudcDocumentGraphModel = UDCDocumentGraphModel.get(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: getDocumentGraphViewRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, id: udcDocument!.udcDocumentGraphModelId)
                 if databaseOrmResultudcDocumentGraphModel.databaseOrmError.count > 0 {
                     neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModel.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModel.databaseOrmError[0].description))
                     return
@@ -3391,12 +3392,15 @@ public class DocumentGraphNeuron : Neuron {
         let documentLanguage = getDocumentModelsRequest.documentGraphNewRequest.documentLanguage
         let interfaceLanguage = getDocumentModelsRequest.documentGraphNewRequest.interfaceLanguage
         
-//        let databaseOrmResultUDCDocument = UDCDocument.get(udbcDatabaseOrm: udbcDatabaseOrm!, udcProfile: getDocumentModelsRequest.udcProfile, idName: "UDCDocument.Blank", udcDocumentTypeIdName: getDocumentModelsRequest.documentGraphNewRequest.udcDocumentTypeIdName, language: documentLanguage)
-        var documentId = ""
-        try documentUtility.getDocumentId(idName: "UDCDocumentItem.Blank", udcDocumentTypeIdName: getDocumentModelsRequest.documentGraphNewRequest.udcDocumentTypeIdName, udcProfile: getDocumentModelsRequest.udcProfile, documentLanguage: documentLanguage, documentId: &documentId, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
-        if !neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponse) {
+        let databaseOrmResultUDCDocument = UDCDocument.get(udbcDatabaseOrm: udbcDatabaseOrm!, udcProfile: getDocumentModelsRequest.udcProfile, idName: "UDCDocument.Blank", udcDocumentTypeIdName: getDocumentModelsRequest.documentGraphNewRequest.udcDocumentTypeIdName, language: documentLanguage)
+//        var documentId = ""
+//        try documentUtility.getDocumentId(idName: "UDCDocumentItem.Blank", udcDocumentTypeIdName: getDocumentModelsRequest.documentGraphNewRequest.udcDocumentTypeIdName, udcProfile: getDocumentModelsRequest.udcProfile, documentLanguage: documentLanguage, documentId: &documentId, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
+//        try documentUtility.getDocumentId(idName: "UDCDocumentItem.Blank", udcDocumentTypeIdName: getDocumentModelsRequest.documentGraphNewRequest.udcDocumentTypeIdName, udcProfile: getDocumentModelsRequest.udcProfile, documentLanguage: documentLanguage, documentId: &documentId, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
+//        if !neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponse) {
+        if databaseOrmResultUDCDocument.databaseOrmError.count == 0 {
             let generateDocumentGraphViewRequest = GenerateDocumentGraphViewRequest()
-            generateDocumentGraphViewRequest.getDocumentGraphViewRequest.documentId = documentId
+            generateDocumentGraphViewRequest.getDocumentGraphViewRequest.documentId = databaseOrmResultUDCDocument.object[0]._id
+//            generateDocumentGraphViewRequest.getDocumentGraphViewRequest.documentId = documentId
             generateDocumentGraphViewRequest.getDocumentGraphViewRequest.documentLanguage = documentLanguage
             generateDocumentGraphViewRequest.getDocumentGraphViewRequest.editMode = true
             generateDocumentGraphViewRequest.getDocumentGraphViewRequest.interfaceLanguage = interfaceLanguage
@@ -3972,7 +3976,7 @@ public class DocumentGraphNeuron : Neuron {
                     
                     
 //                }
-            try doInDocumentItem(operationName: "deleteLine", udcCurrentModel: &udcDocumentGraphModel, findIdName: udcDocumentGraphModel.idName, idName: udcDocument.idName, parentId: udcDocumentGraphModel.getParentEdgeId(documentLanguage)[0], udcSentencePatternDataGroupValue: udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[0].udcSentencePatternDataGroupValue, udcDocumentTypeIdName: documentGraphDeleteLineRequest.udcDocumentTypeIdName, udcProfile: documentGraphDeleteLineRequest.udcProfile, sentenceIndex: 0, nodeIndex: documentGraphDeleteLineRequest.nodeIndex, itemIndex: 0, level: documentGraphDeleteLineRequest.level, isParent: udcDocumentGraphModel.isChildrenAllowed, language: documentGraphDeleteLineRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
+            try doInDocumentItem(operationName: "deleteLine", udcCurrentModel: &udcDocumentGraphModel, findIdName: udcDocumentGraphModel.idName, idName: udcDocument.idName, parentId: udcDocumentGraphModel.getParentEdgeId(documentLanguage)[0], rootLanguageId: udcDocumentGraphModel._id, udcDocumentTypeIdName: documentGraphDeleteLineRequest.udcDocumentTypeIdName, udcProfile: documentGraphDeleteLineRequest.udcProfile, sentenceIndex: 0, nodeIndex: documentGraphDeleteLineRequest.nodeIndex, itemIndex: 0, level: documentGraphDeleteLineRequest.level, isParent: udcDocumentGraphModel.isChildrenAllowed, language: documentGraphDeleteLineRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
             
             if neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponse) {
                 return
@@ -5642,7 +5646,13 @@ public class DocumentGraphNeuron : Neuron {
         
         if documentGraphDeleteItemRequest.udcDocumentTypeIdName == "UDCDocumentType.DocumentItem" {
             if udcDocumentGraphModelCheck.isChildrenAllowed && documentGraphDeleteItemRequest.treeLevel > 1 {
-                documentGraphDeleteItemRequest.itemIndex -= 1
+                if documentGraphDeleteItemRequest.documentLanguage != "en" {
+                documentGraphDeleteItemRequest.itemIndex -= 3
+                }
+            } else {
+                if documentGraphDeleteItemRequest.documentLanguage != "en" {
+                    documentGraphDeleteItemRequest.itemIndex -= 2
+                }
             }
         }
         
@@ -6003,73 +6013,74 @@ public class DocumentGraphNeuron : Neuron {
         }
         
         if documentGraphDeleteItemResponse.documentItemViewDeleteData.count == 0 {
-            if udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].udcDocumentItemGraphReferenceTarget.count > 0 {
-                neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: "CannotDeleteReferedSomeWhere", description: "Cannot Delete! Refered some where!"))
-                return
-            } else if udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].udcDocumentItemGraphReferenceSource.count > 0 {
-                for udcdigrs in udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].udcDocumentItemGraphReferenceSource {
-                    let databaseOrmResultudcDocumentGraphModelSource = UDCDocumentGraphModel.get(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, id: udcdigrs.nodeId, language: documentLanguage) as DatabaseOrmResult<UDCDocumentGraphModel>
-                    if databaseOrmResultudcDocumentGraphModelSource.databaseOrmError.count > 0 {
-                        neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModelSource.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModelSource.databaseOrmError[0].description))
-                        return
-                    }
-                    let udcDocumentGraphModelSource = databaseOrmResultudcDocumentGraphModelSource.object[0]
-                    var removeIndex = [Int]()
-                    for (udcdigrtIndex, udcdigrt) in udcDocumentGraphModelSource.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget.enumerated() {
-                        if documentGraphDeleteItemRequest.itemIndex == udcdigrt.referenceItemIndex && udcdigrs.referenceSentenceIndex == documentGraphDeleteItemRequest.sentenceIndex && udcDocumentGraphModel._id == udcdigrt.nodeId {
-                            removeIndex.append(udcdigrtIndex)
-                        }
-                    }
-                    for rmIndex in removeIndex {
-                        udcDocumentGraphModelSource.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget.remove(at: rmIndex)
-                    }
-                    let databaseOrmResultudcDocumentGraphModelSave = UDCDocumentGraphModel.update(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, object: udcDocumentGraphModelSource) as DatabaseOrmResult<UDCDocumentGraphModel>
-                    if databaseOrmResultudcDocumentGraphModelSave.databaseOrmError.count > 0 {
-                        neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModelSave.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModelSave.databaseOrmError[0].description))
-                        return
-                    }
-                }
-            }
-            
-            // If any reference position is changing then do it in source
-            for (udcspdgvIndex, udcspdgv) in udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue.enumerated() {
-                // Check for positional changes
-                if udcspdgv.udcDocumentItemGraphReferenceSource.count > 0 {
-                    if documentGraphDeleteItemRequest.itemIndex < udcspdgvIndex {
-                        for udcdigrs in udcspdgv.udcDocumentItemGraphReferenceSource {
-                            let databaseOrmResultudcDocumentGraphModel1 = UDCDocumentGraphModel.get(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, id: udcdigrs.nodeId, language: documentLanguage)
-                            if databaseOrmResultudcDocumentGraphModel1.databaseOrmError.count > 0 {
-                                neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModel1.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModel1.databaseOrmError[0].description))
-                                return
-                            }
-                            let udcDocumentGraphModelSource = databaseOrmResultudcDocumentGraphModel1.object[0]
-                            
-                            // Update the reference of the source to plus 1, since position changed
-                            for (udcdigrtIndex, udcdigrt) in udcDocumentGraphModelSource.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget.enumerated() {
-                                if udcdigrt.nodeId == udcDocumentGraphModel._id && udcdigrt.referenceItemIndex == udcspdgvIndex && udcdigrt.referenceSentenceIndex == documentGraphDeleteItemRequest.sentenceIndex {
-                                    // Reference index change model is same as inserted model, so put changes there also
-                                    if udcDocumentGraphModelSource._id == documentGraphDeleteItemRequest.nodeId { udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget[udcdigrtIndex].referenceItemIndex -= 1
-                                    }
-                                    udcdigrt.referenceItemIndex -= 1
-                                }
-                            }
-                            
-                            // Update back
-                            udcDocumentGraphModelSource.udcDocumentTime.changedBy = profileId
-                            udcDocumentGraphModelSource.udcDocumentTime.changedTime = Date()
-                            let databaseOrmResultudcDocumentGraphModelUpdate = UDCDocumentGraphModel.update(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, object: udcDocumentGraphModelSource)
-                            if databaseOrmResultudcDocumentGraphModelUpdate.databaseOrmError.count > 0 {
-                                neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModelUpdate.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModelUpdate.databaseOrmError[0].description))
-                                return
-                            }
-                        }
-                    }
-                }
-            }
-            
+//            if udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].udcDocumentItemGraphReferenceTarget.count > 0 {
+//                neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: "CannotDeleteReferedSomeWhere", description: "Cannot Delete! Refered some where!"))
+//                return
+//            } else if udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].udcDocumentItemGraphReferenceSource.count > 0 {
+//                for udcdigrs in udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].udcDocumentItemGraphReferenceSource {
+//                    let databaseOrmResultudcDocumentGraphModelSource = UDCDocumentGraphModel.get(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, id: udcdigrs.nodeId, language: documentLanguage) as DatabaseOrmResult<UDCDocumentGraphModel>
+//                    if databaseOrmResultudcDocumentGraphModelSource.databaseOrmError.count > 0 {
+//                        neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModelSource.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModelSource.databaseOrmError[0].description))
+//                        return
+//                    }
+//                    let udcDocumentGraphModelSource = databaseOrmResultudcDocumentGraphModelSource.object[0]
+//                    var removeIndex = [Int]()
+//                    for (udcdigrtIndex, udcdigrt) in udcDocumentGraphModelSource.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget.enumerated() {
+//                        if documentGraphDeleteItemRequest.itemIndex == udcdigrt.referenceItemIndex && udcdigrs.referenceSentenceIndex == documentGraphDeleteItemRequest.sentenceIndex && udcDocumentGraphModel._id == udcdigrt.nodeId {
+//                            removeIndex.append(udcdigrtIndex)
+//                        }
+//                    }
+//                    for rmIndex in removeIndex {
+//                        udcDocumentGraphModelSource.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget.remove(at: rmIndex)
+//                    }
+//                    let databaseOrmResultudcDocumentGraphModelSave = UDCDocumentGraphModel.update(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, object: udcDocumentGraphModelSource) as DatabaseOrmResult<UDCDocumentGraphModel>
+//                    if databaseOrmResultudcDocumentGraphModelSave.databaseOrmError.count > 0 {
+//                        neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModelSave.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModelSave.databaseOrmError[0].description))
+//                        return
+//                    }
+//                }
+//            }
+//
+//            // If any reference position is changing then do it in source
+//            for (udcspdgvIndex, udcspdgv) in udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue.enumerated() {
+//                // Check for positional changes
+//                if udcspdgv.udcDocumentItemGraphReferenceSource.count > 0 {
+//                    if documentGraphDeleteItemRequest.itemIndex < udcspdgvIndex {
+//                        for udcdigrs in udcspdgv.udcDocumentItemGraphReferenceSource {
+//                            let databaseOrmResultudcDocumentGraphModel1 = UDCDocumentGraphModel.get(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, id: udcdigrs.nodeId, language: documentLanguage)
+//                            if databaseOrmResultudcDocumentGraphModel1.databaseOrmError.count > 0 {
+//                                neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModel1.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModel1.databaseOrmError[0].description))
+//                                return
+//                            }
+//                            let udcDocumentGraphModelSource = databaseOrmResultudcDocumentGraphModel1.object[0]
+//
+//                            // Update the reference of the source to plus 1, since position changed
+//                            for (udcdigrtIndex, udcdigrt) in udcDocumentGraphModelSource.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget.enumerated() {
+//                                if udcdigrt.nodeId == udcDocumentGraphModel._id && udcdigrt.referenceItemIndex == udcspdgvIndex && udcdigrt.referenceSentenceIndex == documentGraphDeleteItemRequest.sentenceIndex {
+//                                    // Reference index change model is same as inserted model, so put changes there also
+//                                    if udcDocumentGraphModelSource._id == documentGraphDeleteItemRequest.nodeId { udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[udcdigrs.referenceSentenceIndex].udcSentencePatternDataGroupValue[udcdigrs.referenceItemIndex].udcDocumentItemGraphReferenceTarget[udcdigrtIndex].referenceItemIndex -= 1
+//                                    }
+//                                    udcdigrt.referenceItemIndex -= 1
+//                                }
+//                            }
+//
+//                            // Update back
+//                            udcDocumentGraphModelSource.udcDocumentTime.changedBy = profileId
+//                            udcDocumentGraphModelSource.udcDocumentTime.changedTime = Date()
+//                            let databaseOrmResultudcDocumentGraphModelUpdate = UDCDocumentGraphModel.update(collectionName: neuronUtility!.getCollectionName(udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName)!, udbcDatabaseOrm: udbcDatabaseOrm!, object: udcDocumentGraphModelSource)
+//                            if databaseOrmResultudcDocumentGraphModelUpdate.databaseOrmError.count > 0 {
+//                                neuronResponse.neuronOperation.neuronOperationStatus.neuronOperationError?.append(neuronUtility!.getNeuronOperationError(name: databaseOrmResultudcDocumentGraphModelUpdate.databaseOrmError[0].name, description: databaseOrmResultudcDocumentGraphModelUpdate.databaseOrmError[0].description))
+//                                return
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//
+            if documentGraphDeleteItemRequest.udcDocumentTypeIdName != "UDCDocumentType.DocumentItem" {
             if udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].uvcViewItemType == "UVCViewItemType.Photo" && !udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].itemId!.isEmpty {
                 
-                if documentGraphDeleteItemRequest.udcDocumentTypeIdName != "UDCDocumentType.DocumentItem" {
+                
                     try removePhoto(id: udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphDeleteItemRequest.itemIndex].itemId!, udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
                 }
                 
@@ -6343,7 +6354,7 @@ public class DocumentGraphNeuron : Neuron {
                     
                     // Use the parent id name and pervious node id name to search.
                     // If parent matches then change the respective children if found
-            try doInDocumentItem(operationName: "delete", udcCurrentModel: &udcDocumentGraphModel, findIdName: prevIdName, idName: udcDocument.idName, parentId: udcDocumentGraphModel.getParentEdgeId(documentLanguage)[0], udcSentencePatternDataGroupValue: udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue, udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphDeleteItemRequest.udcProfile, sentenceIndex: documentGraphDeleteItemRequest.sentenceIndex, nodeIndex: documentGraphDeleteItemRequest.nodeIndex, itemIndex: documentGraphDeleteItemRequest.itemIndex, level: documentGraphDeleteItemRequest.treeLevel, isParent: udcDocumentGraphModel.isChildrenAllowed, language: documentGraphDeleteItemRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
+            try doInDocumentItem(operationName: "delete", udcCurrentModel: &udcDocumentGraphModel, findIdName: prevIdName, idName: udcDocument.idName, parentId: udcDocumentGraphModel.getParentEdgeId(documentLanguage)[0], rootLanguageId: udcDocumentGraphModel._id, udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphDeleteItemRequest.udcProfile, sentenceIndex: documentGraphDeleteItemRequest.sentenceIndex, nodeIndex: documentGraphDeleteItemRequest.nodeIndex, itemIndex: documentGraphDeleteItemRequest.itemIndex, level: documentGraphDeleteItemRequest.treeLevel, isParent: udcDocumentGraphModel.isChildrenAllowed, language: documentGraphDeleteItemRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
 //                    let _ = try findAndProcessDocumentItem(mode: "delete", udcSentencePatternDataGroupValue: udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphDeleteItemRequest.sentenceIndex].udcSentencePatternDataGroupValue, parentIdName: udcDocumentGraphModelLangSpeficParentNode.idName, findIdName: prevIdName, inChildrens: udcDocumentGraphModelOther.childrenId(documentLanguage), parentFound: &parentFound, foundParentModel: &foundParentModel, foundParentId: &foundParentId, nodeIndex: documentGraphDeleteItemRequest.nodeIndex, itemIndex: documentGraphDeleteItemRequest.itemIndex, level: documentGraphDeleteItemRequest.treeLevel, udcDocumentTypeIdName: documentGraphDeleteItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphDeleteItemRequest.udcProfile, isParent: udcDocumentGraphModel.isChildrenAllowed, generatedIdName: udcDocumentGraphModel.idName,  neuronRequest: neuronRequest, neuronResponse: &neuronResponse, documentLanguage: udcd.language, addUdcSentencePatternDataGroupValue: [], addUdcViewItemCollection: UDCViewItemCollection(), addUdcSentencePatternDataGroupValueIndex: [])
 //                    if neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponse) {
 //                        return
@@ -6383,10 +6394,24 @@ public class DocumentGraphNeuron : Neuron {
             if documentGraphDeleteItemRequest.udcDocumentTypeIdName == "UDCDocumentType.DocumentItem" {
                 // Need to move this code to specific neuron
                 if udcDocumentGraphModelCheck.isChildrenAllowed && documentGraphDeleteItemRequest.treeLevel > 1 {
-                    documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex + 1
+                    if documentGraphDeleteItemRequest.documentLanguage != "en" {
+                        documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex + 3
+                    } else {
+                        documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex + 1
+                    }
                 } else {
-                    documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex
+                    if documentGraphDeleteItemRequest.documentLanguage != "en" {
+                        documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex + 2
+                    } else {
+                        documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex
+                    }
                 }
+                
+                //                if udcDocumentGraphModelCheck.isChildrenAllowed && documentGraphDeleteItemRequest.treeLevel > 1 {
+                //                    documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex + 1
+                //                } else {
+                //                    documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex
+                //                }
             } else {
                 documentItemViewDeleteData.itemIndex = documentGraphDeleteItemRequest.itemIndex
             }
@@ -6598,7 +6623,7 @@ public class DocumentGraphNeuron : Neuron {
 //        if documentGraphChangeItemRequest.udcDocumentTypeIdName == "UDCDocumentType.DocumentItem" && documentGraphChangeItemRequest.level > 1 {
 //            itemIdForReferenceIndex += 1
 //        }
-        if udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphChangeItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphChangeItemRequest.itemIndex].itemIdName!.hasPrefix("UDCDocumentItem.") {
+        if udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphChangeItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphChangeItemRequest.itemIndex].getItemIdNameSpaceIfNil().hasPrefix("UDCDocumentItem.") {
             let itemId =  udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphChangeItemRequest.sentenceIndex].udcSentencePatternDataGroupValue[documentGraphChangeItemRequest.itemIndex].itemId
             
             // If not changed to same item
@@ -6964,7 +6989,7 @@ public class DocumentGraphNeuron : Neuron {
 //                    
                     // Use the parent id name and pervious node id name to search.
                     // If parent matches then change the respective children if found
-                    try doInDocumentItem(operationName: "change", udcCurrentModel: &udcDocumentGraphModel, findIdName: udcDocumentGraphModel.idName, idName: udcDocument.idName, parentId: udcDocumentGraphModel.getParentEdgeId(documentLanguage)[0], udcSentencePatternDataGroupValue: udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphChangeItemRequest.sentenceIndex].udcSentencePatternDataGroupValue, udcDocumentTypeIdName: documentGraphChangeItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphChangeItemRequest.udcProfile, sentenceIndex: documentGraphChangeItemRequest.sentenceIndex, nodeIndex: documentGraphChangeItemRequest.nodeIndex, itemIndex: documentGraphChangeItemRequest.itemIndex, level: documentGraphChangeItemRequest.level, isParent: udcDocumentGraphModel.isChildrenAllowed, language: documentGraphChangeItemRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
+                    try doInDocumentItem(operationName: "change", udcCurrentModel: &udcDocumentGraphModel, findIdName: udcDocumentGraphModel.idName, idName: udcDocument.idName, parentId: udcDocumentGraphModel.getParentEdgeId(documentLanguage)[0], rootLanguageId: udcDocumentGraphModel._id, udcDocumentTypeIdName: documentGraphChangeItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphChangeItemRequest.udcProfile, sentenceIndex: documentGraphChangeItemRequest.sentenceIndex, nodeIndex: documentGraphChangeItemRequest.nodeIndex, itemIndex: documentGraphChangeItemRequest.itemIndex, level: documentGraphChangeItemRequest.level, isParent: udcDocumentGraphModel.isChildrenAllowed, language: documentGraphChangeItemRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
 //                    let _ = try findAndProcessDocumentItem(mode: "change", udcSentencePatternDataGroupValue: udcDocumentGraphModel.udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphChangeItemRequest.sentenceIndex].udcSentencePatternDataGroupValue, parentIdName: udcDocumentGraphModelLangSpeficParentNode.idName, findIdName: udcDocumentGraphModel.idName, inChildrens: udcDocumentGraphModelOther.childrenId(documentLanguage), parentFound: &parentFound, foundParentModel: &foundParentModel, foundParentId: &foundParentId, nodeIndex: documentGraphChangeItemRequest.nodeIndex, itemIndex: documentGraphChangeItemRequest.itemIndex, level: documentGraphChangeItemRequest.level, udcDocumentTypeIdName: documentGraphChangeItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphChangeItemRequest.udcProfile, isParent: udcDocumentGraphModel.isChildrenAllowed,  generatedIdName: "", neuronRequest: neuronRequest, neuronResponse: &neuronResponse, documentLanguage: udcd.language, addUdcSentencePatternDataGroupValue: [], addUdcViewItemCollection: udcViewItemCollection, addUdcSentencePatternDataGroupValueIndex: [])
 //                    if neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponse) {
 //                        return
@@ -7562,7 +7587,13 @@ public class DocumentGraphNeuron : Neuron {
         
         if documentGraphInsertItemRequest.udcDocumentTypeIdName == "UDCDocumentType.DocumentItem" {
             if udcDocumentGraphModelCheck.isChildrenAllowed && documentGraphInsertItemRequest.level > 1 {
-                documentGraphInsertItemRequest.itemIndex -= 1
+                if documentLanguage != "en" {
+                    documentGraphInsertItemRequest.itemIndex -= 3
+                }
+            } else {
+                if documentLanguage != "en" {
+                    documentGraphInsertItemRequest.itemIndex -= 2
+                }
             }
         }
         
@@ -8576,7 +8607,7 @@ public class DocumentGraphNeuron : Neuron {
                         // If parent matches then add to the respective parent as a
                         // new node or insert into existing node. if parent not found returns false
                 
-                        try doInDocumentItem(operationName: "insert", udcCurrentModel: &udcDocumentGraphModel!, findIdName: prevIdName!, idName: udcDocument.idName, parentId: udcDocumentGraphModel!.getParentEdgeId(documentLanguage)[0], udcSentencePatternDataGroupValue: udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphInsertItemRequest.sentenceIndex].udcSentencePatternDataGroupValue, udcDocumentTypeIdName: documentGraphInsertItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphInsertItemRequest.udcProfile, sentenceIndex: documentGraphInsertItemRequest.sentenceIndex, nodeIndex: documentGraphInsertItemRequest.nodeIndex, itemIndex: documentGraphInsertItemRequest.itemIndex, level: documentGraphInsertItemRequest.level, isParent: documentGraphInsertItemRequest.isParent, language: documentGraphInsertItemRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
+                        try doInDocumentItem(operationName: "insert", udcCurrentModel: &udcDocumentGraphModel!, findIdName: prevIdName!, idName: udcDocument.idName, parentId: udcDocumentGraphModel!.getParentEdgeId(documentLanguage)[0], rootLanguageId:  udcDocumentGraphModel!._id, udcDocumentTypeIdName: documentGraphInsertItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphInsertItemRequest.udcProfile, sentenceIndex: documentGraphInsertItemRequest.sentenceIndex, nodeIndex: documentGraphInsertItemRequest.nodeIndex, itemIndex: documentGraphInsertItemRequest.itemIndex, level: documentGraphInsertItemRequest.level, isParent: documentGraphInsertItemRequest.isParent, language: documentGraphInsertItemRequest.documentLanguage, neuronRequest: neuronRequest, neuronResponse: &neuronResponse)
                         
 //                        let result = try findAndProcessDocumentItem(mode: "insert", udcSentencePatternDataGroupValue: udcSentencePattern.udcSentencePatternData[0].udcSentencePatternDataGroup[documentGraphInsertItemRequest.sentenceIndex].udcSentencePatternDataGroupValue, parentIdName: udcDocumentGraphModelLangSpeficParentNode.idName, findIdName: prevIdName!, inChildrens: udcDocumentGraphModelOther.childrenId(documentLanguage), parentFound: &parentFound, foundParentModel: &foundParentModel, foundParentId: &foundParentId, nodeIndex: documentGraphInsertItemRequest.nodeIndex, itemIndex: documentGraphInsertItemRequest.itemIndex, level: documentGraphInsertItemRequest.level, udcDocumentTypeIdName: documentGraphInsertItemRequest.udcDocumentTypeIdName, udcProfile: documentGraphInsertItemRequest.udcProfile, isParent: documentGraphInsertItemRequest.isParent, generatedIdName: "", neuronRequest: neuronRequest, neuronResponse: &neuronResponse, documentLanguage: udcd.language, addUdcSentencePatternDataGroupValue: [udcSentencePatternGroupValueLocal], addUdcViewItemCollection: udcViewItemCollectionLocal, addUdcSentencePatternDataGroupValueIndex: [Int.max])
 //                        if neuronUtility!.isNeuronOperationError(neuronResponse: neuronResponse) {
@@ -8681,10 +8712,10 @@ public class DocumentGraphNeuron : Neuron {
         
     }
     
-    private func doInDocumentItem(operationName: String, udcCurrentModel: inout UDCDocumentGraphModel, findIdName: String, idName: String, parentId: String, udcSentencePatternDataGroupValue: [UDCSentencePatternDataGroupValue], udcDocumentTypeIdName: String, udcProfile: [UDCProfile], sentenceIndex: Int, nodeIndex: Int, itemIndex: Int, level: Int, isParent: Bool, language: String, neuronRequest: NeuronRequest, neuronResponse: inout NeuronRequest) throws {
+    private func doInDocumentItem(operationName: String, udcCurrentModel: inout UDCDocumentGraphModel, findIdName: String, idName: String, parentId: String, rootLanguageId: String, udcDocumentTypeIdName: String, udcProfile: [UDCProfile], sentenceIndex: Int, nodeIndex: Int, itemIndex: Int, level: Int, isParent: Bool, language: String, neuronRequest: NeuronRequest, neuronResponse: inout NeuronRequest) throws {
         let doInDocumentItemRequest = DoInDocumentItemRequest()
         doInDocumentItemRequest.operationName = operationName
-        doInDocumentItemRequest.udcSentencePatternDataGroupValue.append(contentsOf: udcSentencePatternDataGroupValue)
+        doInDocumentItemRequest.rootLanguageId = rootLanguageId
         doInDocumentItemRequest.documentIdName = idName
         doInDocumentItemRequest.isParent = isParent
         doInDocumentItemRequest.itemIndex = itemIndex

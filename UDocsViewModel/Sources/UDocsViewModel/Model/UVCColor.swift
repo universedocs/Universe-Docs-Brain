@@ -27,7 +27,7 @@ public class UVCColor : Codable {
         self.hexString = hexString
         self.level = level
     }
-    
+
     public static func get(_ name: String) -> UVCColor {
         if UVCColor.data.count == 0 {
             UVCColor.data["UVCColor.Red"] = UVCColor("UVCColor.Red", "Red", "#FF3B30")

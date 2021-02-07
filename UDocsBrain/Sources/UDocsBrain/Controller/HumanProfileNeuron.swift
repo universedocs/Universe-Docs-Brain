@@ -30,7 +30,7 @@ public class HumanProfileNeuron : Neuron {
     public static func getRootResponse(neuronSourceId: String) -> NeuronRequest {
         return NeuronRequest()
     }
-    let neuronUtility: NeuronUtility? = nil
+    var neuronUtility: NeuronUtility? = nil
     let documentParser = DocumentParser()
     var udbcDatabaseOrm: UDBCDatabaseOrm?
     static var dendriteMap: [String : Neuron] = [String : Neuron]()
@@ -3637,7 +3637,7 @@ public class HumanProfileNeuron : Neuron {
         var neuronResponse = NeuronRequest()
         do {
             self.udbcDatabaseOrm = udbcDatabaseOrm
-            
+            self.neuronUtility = neuronUtility
             if neuronRequest.neuronOperation.parent == true {
                 print("\(HumanProfileNeuron.getName()) Parent show setting child to true")
                 neuronResponse.neuronOperation.child = true
@@ -3646,7 +3646,6 @@ public class HumanProfileNeuron : Neuron {
             var neuronRequestLocal = neuronRequest
             
             
-            self.neuronUtility!.setUDBCDatabaseOrm(udbcDatabaseOrm: udbcDatabaseOrm, neuronName: HumanProfileNeuron.getName())
             documentParser.setNeuronUtility(neuronUtility: self.neuronUtility!,  neuronName: HumanProfileNeuron.getName())
             documentParser.setUDBCDatabaseOrm(udbcDatabaseOrm: udbcDatabaseOrm, neuronName: HumanProfileNeuron.getName())
             

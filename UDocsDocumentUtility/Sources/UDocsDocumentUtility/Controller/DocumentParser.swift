@@ -179,7 +179,7 @@ public class DocumentParser {
                     fieldFound = false
                     for udcspdgv in udcDocumentGraphModel!.getSentencePatternDataGroupValue() {
                         if udcspdgv.item != ":" && !fieldFound {
-                            idName = udcspdgv.itemIdName!
+                            idName = udcspdgv.getItemIdNameSpaceIfNil()
                             continue
                         }
                         if udcspdgv.item == ":" {

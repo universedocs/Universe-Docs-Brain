@@ -7,48 +7,160 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "71A85E8B-AF23-44CE-B92F-17B6A06958D6"
+            uuid = "22F59B1D-E73D-4EE3-B7B1-1E1D68D0E1B5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UDocsDocumentUtility/Sources/UDocsDocumentUtility/Controller/DocumentGraphUtility.swift"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "558"
-            endingLineNumber = "558"
-            landmarkName = "getDocumentModel(udcDocumentId:idName:udcDocumentTypeIdName:udcProfile:documentLanguage:isLanguageChild:neuronRequest:neuronResponse:)"
+            startingLineNumber = "3053"
+            endingLineNumber = "3053"
+            landmarkName = "insertItem(isNewChild:rootLanguageId:parentModel:currentModel:nodeIndex:itemIndex:sentenceIndex:udcDocumentTypeIdName:documentLanguage:udcProfile:addUdcViewItemCollection:isParent:isInsertAtFirst:isInsertAtLast:insertedModelId:udcDocumentGraphModelReference:neuronRequest:neuronResponse:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DB4864ED-8637-4033-9538-631159F78037"
+            uuid = "9863D10D-214E-459A-8B5E-8A469539C99D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UDocsDocumentGraphNeuron/Sources/UDocsDocumentGraphNeuron/Controller/DocumentGraphNeuron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8610"
+            endingLineNumber = "8610"
+            landmarkName = "documentInsertItem(documentGraphInsertItemRequest:documentGraphInsertItemResponse:neuronRequest:neuronResponse:isGeneratedItem:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "789DF718-0434-4978-A941-3CA787B520FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2986"
+            endingLineNumber = "2986"
+            landmarkName = "insertInDocumentItem(udcCurrentModel:findIdName:idName:parentId:rootLanguageId:udcDocumentTypeIdName:udcProfile:sentenceIndex:nodeIndex:itemIndex:level:isParent:language:neuronRequest:neuronResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98DCABE7-DE2E-4BD7-BFA2-9B3EB5178BEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2091"
+            endingLineNumber = "2091"
+            landmarkName = "generateDocumentItemViewForInsert(neuronRequest:neuronResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03D447A3-7608-435A-BC48-357AEFC216E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2088"
+            endingLineNumber = "2088"
+            landmarkName = "generateDocumentItemViewForInsert(neuronRequest:neuronResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24D87FC3-D12C-4F27-A075-668DE26DDBC8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2040"
+            endingLineNumber = "2040"
+            landmarkName = "generateDocumentItemViewForInsert(neuronRequest:neuronResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B81B24A1-52D0-4C8C-AC67-0598F462DB34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2053"
+            endingLineNumber = "2053"
+            landmarkName = "generateDocumentItemViewForInsert(neuronRequest:neuronResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C467C16-4256-45D1-B1B6-550C2277AA38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2063"
+            endingLineNumber = "2063"
+            landmarkName = "generateDocumentItemViewForInsert(neuronRequest:neuronResponse:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "638427EA-5A6C-4226-88DC-0B336E29CC94"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UDocsDocumentModel/Sources/UDocsDocumentModel/Model/UDCTest.swift"
+            filePath = "UDocsDocumentItemNeuron/Sources/UDocsDocumentItemNeuron/Controller/DocumentItemNeuron.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "645"
-            endingLineNumber = "645"
-            landmarkName = "addEdge(collectionName:)"
+            startingLineNumber = "3333"
+            endingLineNumber = "3333"
+            landmarkName = "findAndProcessDocumentItem(mode:rootLanguageId:findPathIdName:findIdName:inChildrens:parentFound:foundParentModel:foundParentId:nodeIndex:itemIndex:level:udcDocumentTypeIdName:udcProfile:isParent:generatedIdName:neuronRequest:neuronResponse:documentLanguage:addUdcViewItemCollection:pathIdName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6B1DB049-03D0-4C9B-A9ED-148089688ECB"
+            uuid = "F657B6A9-8D81-4FB7-B7FA-FB7D0EE453DD"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UDocsDocumentModel/Sources/UDocsDocumentModel/Model/UDCTest.swift"
+            filePath = "UDocsViewModel/Sources/UDocsViewModel/Model/UVCColor.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "589"
-            endingLineNumber = "589"
-            landmarkName = "createGraphEdgeLabel()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "get(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
